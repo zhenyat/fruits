@@ -1,4 +1,7 @@
 class FruitsController < ApplicationController
+  def dashboard
+  end
+
   def index
     render json: Fruit.all#.order(id: 'DESC')
   end
