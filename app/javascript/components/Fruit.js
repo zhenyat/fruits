@@ -31,7 +31,7 @@ export default class Fruit extends React.Component {
         {description}
         <td>
         <button className='btn btn-info btn-sm' onClick={() => this.handleEdit(fruit)}>{this.state.editable? 'Submit' : 'Edit'}</button>
-        <button className="btn btn-danger btn-sm" onClick={() => {if(window.confirm('arwe you sure?')){this.props.handleDelete(this.props.fruit.id)};}}>Delete</button>
+        <button className="btn btn-danger btn-sm" onClick={() => {if(window.confirm('are you sure?')){this.props.handleDelete(this.props.fruit.id)};}}>Delete</button>
 
         </td>
       </tr>
